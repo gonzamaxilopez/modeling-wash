@@ -1,0 +1,13 @@
+\babel@toc {english}{}
+\contentsline {section}{Abstract}{1}{Doc-Start}% 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}% 
+\contentsline {section}{\numberline {2}A homogeneous host population}{4}{section.2}% 
+\contentsline {section}{\numberline {3}The WASH interventions in the model}{5}{section.3}% 
+\contentsline {section}{\numberline {4}A host population with hygiene interventions}{5}{section.4}% 
+\contentsline {section}{\numberline {5}A host population with sanitation interventions}{7}{section.5}% 
+\contentsline {section}{\numberline {6}A host population with WASH interventions}{8}{section.6}% 
+\contentsline {section}{\numberline {7}Simulations}{8}{section.7}% 
+\contentsline {section}{\numberline {8}Discussion and Conclusions}{10}{section.8}% 
+\contentsline {section}{Bibliography}{12}{section*.4}% 
+\contentsline {section}{\numberline {A}Appendix}{15}{appendix.A}% 
+\contentsline {subsection}{\numberline {A.1}Equilibria and Basic Reproduction Number}{15}{subsection.A.1}% 
