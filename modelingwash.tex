@@ -212,7 +212,7 @@ determinar el impacto de las intervenciones  WASH y PDM sobre la carga media de 
 	where the associated parameters are defined below:
 	\begin{itemize}
 		\item %$\beta$ y $\rho$ son las tasas de contacto (o exposición) y de aporte (o contribución) de un individuo con el reservorio $L$ (porción del reservorio per cápita) respectivamente
-		$\rho$ and $\rho$ are the rate of contact (or exposure) and the rate contribution of a host to the reservoir $L$, respectively
+		$\beta$ and $\rho$ are the rate of contact (or exposure) and the rate contribution of a host to the reservoir $L$, respectively
 		\item $\mu_H$, $\mu_P$ and $\mu_L$ 
 		are the mortality rates associated with the host, the parasite and the reservoir, respectively
 		%son las tasas de mortalidad asociadas al hospedador, los parásitos y el reservorio respectivamente
@@ -224,22 +224,29 @@ determinar el impacto de las intervenciones  WASH y PDM sobre la carga media de 
 		%\item $\pi_i$ la proporción de hospedadores del grupo $i$
 		%\item $\epsilon_A$ y $\epsilon_S$ son los valores de eficacia de la intervención del agua potable y saneamiento respectivamente
 		\item $F$ %{\color{green} %cuantifica los efectos de la fecundidad dependiente de la densidad	de los parásitos por hospedador y los efectos de la probabiliadad de apareamiento. 
-		is the product of the functions: $\psi$ which quantifies the effects of the distribution of parasites in the host population and their fecundity dependent on the density of the parasites in the host; and $\phi$ which quantifies the effects of reproduction between parasites (mating probability) assuming a polygamous mating system. When the absence of density-dependence fecundity effects and mating probability is assumed, we assume that $F = 1$ (unit). As an example, if a negative binomial model is assumed for the distribution of parasites, the expressions for $\psi$ and $\rho$ are given by the expressions obtained in chapter 3,
+		is the product of the functions: 
+		$\psi$ that quantifies the effects of both the distribution of parasites in the host population, and the fecundity density-dependence of the parasites in the host.
+		%$\psi$ that quantifies the effects of the distribution of parasites in the host population and their fecundity dependent on the density of the parasites in the host; and 
+		;and $\phi$ that quantifies the effects of parasite reproduction (mating probability) assuming a polygamous mating system. 
+		%
+		When the absence of density-dependence fecundity effects and mating probability is assumed, we assume that F = 1 (unit). As an example, if a negative binomial model is assumed for the distribution of parasites, the expressions for $\psi$ and $\phi$ are given by the expressions obtained in \citet{lopez2022general},
+		
+		%is the product of the functions: $\psi$ which quantifies the effects of the distribution of parasites in the host population and their fecundity dependent on the density of the parasites in the host; and $\phi$ which quantifies the effects of reproduction between parasites (mating probability) assuming a polygamous mating system. When the absence of density-dependence fecundity effects and mating probability is assumed, we assume that $F = 1$ (unit). As an example, if a negative binomial model is assumed for the distribution of parasites, the expressions for $\psi$ and $\rho$ are given by the expressions obtained in chapter 3,
 		
 		
 		
-		es el producto de las funciones: 
-		$\psi$ que cuantifica los efectos de la distribución de parásitos en la población de hospedadores y su fecundidad dependiente de la densidad de los parásitos en el hospedador; 
-		%denso-dependiente del parásito y sus distribucion y 
-		y $\phi$ que cuantifica los efectos de la reproducción entre parásitos (probabilidad de apareamiento)
-		%para generar nuevos huevos fertilizados para el reservorio 
-		suponiendo un sistema de apareamiento poligámico. 
-		Cuando se supone la ausencia de los efectos de la fecundidad denso-dependencia y la probabilidad de apareamiento asumimos que $F=1$ (unidad).
-		A modo de ejemplo si se supone un modelo binomial negativo para la distribución de parásitos, las expresiones para $\psi$ y $\phi$ vienen 
-		{%\color{green}
-		dadas por las expresiones obtenidas en el capítulo 3,%\ref{chap:apareamiento}
+%		es el producto de las funciones: 
+%		$\psi$ que cuantifica los efectos de la distribución de parásitos en la población de hospedadores y su fecundidad dependiente de la densidad de los parásitos en el hospedador; 
+%		%denso-dependiente del parásito y sus distribucion y 
+%		y $\phi$ que cuantifica los efectos de la reproducción entre parásitos (probabilidad de apareamiento)
+%		%para generar nuevos huevos fertilizados para el reservorio 
+%		suponiendo un sistema de apareamiento poligámico. 
+%		Cuando se supone la ausencia de los efectos de la fecundidad denso-dependencia y la probabilidad de apareamiento asumimos que $F=1$ (unidad).
+%		A modo de ejemplo si se supone un modelo binomial negativo para la distribución de parásitos, las expresiones para $\psi$ y $\phi$ vienen 
+%		{%\color{green}
+%		dadas por las expresiones obtenidas en el capítulo 3,%\ref{chap:apareamiento}
 		%, \citep{anderson1992infectious}.
-		}
+		%}
 		%{\color{red}referencia a los resultados a resultados propios de  capitulos anteriores...
 		%}
 		%} 
@@ -248,7 +255,7 @@ determinar el impacto de las intervenciones  WASH y PDM sobre la carga media de 
 %		 y $\phi$ que cuantifica los efectos de la reproducción entre parásitos 
 %		  %para generar nuevos huevos fertilizados para el reservorio 
 %		 (suponiendo un sistema de apareamiento poligámico). A modo de ejemplo si se supone un modelo binomial negativo para la distribución de parásitos, las expresiones para $\psi$ y $\phi$ vienen dadas por \cite{anderson1992infectious}
-		\begin{equation}8
+		\begin{equation}
 		\begin{split}
 		\psi(M;z,k)&=\left[ 1+(1-z) \tfrac{M}{k}\right] ^{-(k+1)}\\
 		\phi(M;z,k)&=1-\left[ \dfrac{1+(1-z)\frac{M}{k}}{1+(1-\alpha z)\frac{M}{k}}\right] ^{-(k+1)}
