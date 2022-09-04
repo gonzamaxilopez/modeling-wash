@@ -191,7 +191,8 @@ determinar el impacto de las intervenciones  WASH y PDM sobre la carga media de 
 %	\end{itemize}
 %	En términos del modelo la implemetciondel agua potable y saneamiento en al comunidad de hospedadores 
 %	
-	\section{Basic deterministic model with wash interventions}\label{sec:model1}
+	\section{Basic deterministic model with WASH interventions}
+	\label{sec:model1}
 	\subsection{A homogeneous model}
 	A basic model for soil-transmited helminth transmission was developed by Anderson and May in 1985  \citep{anderson1992infectious}. This model considers two variables, the mean burden of parasites in a host population (M) and the infectious environment formed by eggs or larvae of these parasites (L). The model is defined by a set of nonlinear ordinary differential equations as follows:
 %	Un modelo básico para la transmisión de geohelmintos fue desarrollado por Anderson y May en 1985 \citep{anderson1992infectious}. 
@@ -261,42 +262,37 @@ determinar el impacto de las intervenciones  WASH y PDM sobre la carga media de 
 		\phi(M;z,k)&=1-\left[ \dfrac{1+(1-z)\frac{M}{k}}{1+(1-\alpha z)\frac{M}{k}}\right] ^{-(k+1)}
 		\end{split}
 		\end{equation} 
-		donde $M$ es la carga media y $k$ es la inversa del parámetro de dispersión de los parásitos, ambos parámetros del modelo binomial negativo, y $z = e^{-\eta}$ 
-		modela la disminución de la tasa de la fecundidad denso-dependiente, donde $\eta$ representa la intensidad de esta disminución.
-		La fecundidad denso-dependiente
-		%esta ultima 
-		esta descripta por $\lambda z^{n-1}$ con $n$ la cantidad de parásitos en el
-		hospedador \cite{hall2000geographical}.
-		%{\color{red}definir eta}
+		where $M$ is the mean burden and $k$ is the inverse of the parasite dispersion parameter, 
+		both parameters correspond to a negative binomial model,
+		and $z = e^{-\eta}$ models the density-dependent fertility rate decline, where $\eta$ represents the intensity of this decrease. The density-dependent fecundity is described by $\lambda z^{n-1}$ with $n$ the number of parasites in the host \cite{hall2000geographical}.
+		
+%		donde $M$ es la carga media y $k$ es la inversa del parámetro de dispersión de los parásitos, ambos parámetros del modelo binomial negativo, y $z = e^{-\eta}$ 
+%		modela la disminución de la tasa de la fecundidad denso-dependiente, donde $\eta$ representa la intensidad de esta disminución.
+%		La fecundidad denso-dependiente
+%		%esta ultima 
+%		esta descripta por $\lambda z^{n-1}$ con $n$ la cantidad de parásitos en el
+%		hospedador \cite{hall2000geographical}.
+%		%{\color{red}definir eta}
 		
 		%modela los efectos negativos de la fecundidad denso-dependiente sobre la tasa de producción de huevos por parásito hembra, que ocurren en hospedadores con una gran cantidad de parásitos.	      
 	\end{itemize}
 	\subsection{The wash interventions in the model}
-	The World Health Organization recommends as a complementary action to mass drug administration (mda) programs, to implement wash interventions as a strategy for control of parasitic infections \cite{who2012soil}.
-	Good hygiene practices, such as hand washing and personal hygiene, are measures that prevent infection. In addition, in endemic areas, it is important using footwear so that people do not become infected with contaminated soil. 
-	On the other hand, increased access to basic sanitation facilities, such as ventilated pit latrines and septic tanks in order to ensure proper disposal of human feces \cite{paho2003,who2012soil}.
-	Therefore, for modeling purposes, we divide WASH interventions into three modalities:
+	
+	The World Health Organization recommends as complementary action to mass drug administration (MDA) programs, to implement wash interventions as a control strategy for parasitic infections \citep{who2012soil}. Good hygiene practices, such as hand washing and personal hygiene, are measures that prevent infection. Additionally, in endemic areas, it is important to use footwear so that people do not become infected with contaminated soil. Alternatively, increased access to basic sanitation facilities, such as ventilated pit latrines and septic tanks to ensure proper disposal of human feces \citep{paho2003,who2012soil}. 
+	Therefore, for modeling, we divide WASH interventions into three modalities:
 	\begin{itemize}
-		\item ``\textbf{hygiene interventions}'': theses interventions reduces the exposure of host to infections (for example, hand washing, personal hygiene and using footwear).
+		\item ``\textbf{hygiene interventions}'': It consists of access to water and hygiene in WASH.
+		%These interventions reduce the host's exposure to infection (eg, handwashing, personal hygiene, and shoe wear). 
+		Theses interventions reduces the exposure of host to infections (for example, hand washing, personal hygiene and using footwear).
 		%``\textit{higiene}'': esta intervención reducen la exposición de las personas a las infecciones (por ejemplo, lavado de manos y uso de calzado).
-		\item  ``\textbf{sanitation interventions}'': these interventions reduces the contribution of hosts to the reservoir (for example, proper management of wastewater).
-		\item ``\textbf{WASH interventions}'': these interventions are obtained from the sum of the two previous interventions.
+		\item  ``\textbf{sanitation interventions}'': It consists of access to water and sanitation in WASH.
+		These interventions reduces the contribution of hosts to the reservoir (for example, proper management of wastewater).
+		\item ``\textbf{WASH interventions}'': These interventions are obtained from the sum of the two previous interventions.
 		%esta intervención reducen la contribución de las personas al reservorio (por ejemplo, %uso de letrinas
 		%un adecuado manejo de las aguas residuales).
 	\end{itemize}
-	{\color{red}
-	También
-	asumimos que el acceso al``agua'' en \textit{WASH} esta incluida en cualquiera de las dos modalidades anteriores  dependiendo de para qué se necesita, por ejemplo  lavarse las manos (higiene) o descargar letrinas (saneamiento)\cite{coffeng2018predicted}.
-	%{\color{green}
-	%Para medir el 
+	The impact of the interventions will be quantified in terms of two parameters: \textbf{coverage} and \textbf{effectiveness}. Here, the \textbf{coverage} represents the proportion of the population with WASH interventions. \textbf{Effectiveness} represents the average reduction in exposure or contribution to transmission over time, given that an individual undertakes the interventions to some degree (but not necessarily benefiting to their full potential due to, for example, irregular or inappropriate use)\citep{coffeng2018predicted}.
 	
-	El impacto de las intervenciones lo cuantificaremos en términos
-	%Medimos el
-	%impacto de las intervenciones WASH en terminos 
-	de dos parámetros la \textbf{provisión} y la \textbf{efectividad}. 	
-	%Definimos además el impacto de WASH en términos de aceptación y efectividad.
-	 Aquí, la \textbf{provisión}  representa la proporción de la población con intervenciones WASH, y la \textbf{efectividad} que se define a nivel individual, es decir, la reducción promedio en la exposición o contribución a la transmisión a lo largo del tiempo dado que un individuo asume las intervenciones en algún grado (pero no necesariamente beneficiarse de su máximo potencial debido, por ejemplo, a un uso irregular o inadecuado).
-	}
 	 
 %	{\color{red}
 %		Las pautas de la Organización Mundial de la Salud (OMS) recomiendan que las STH se controlen mediante quimioterapia preventiva (PCT) con albendazol (ALB) o mebendazol (MEB) dirigido a niños en edad escolar (SAC), niños en edad preescolar y grupos con alto riesgo de morbilidad. como las mujeres en edad fértil.
@@ -315,7 +311,7 @@ determinar el impacto de las intervenciones  WASH y PDM sobre la carga media de 
 %	Definimos además el impacto de WASH en términos de aceptación y efectividad. Aquí, la captación representa la proporción de la población que asume la intervención WASH, y la efectividad se define a nivel individual, es decir, la reducción promedio en la exposición o contribución a la transmisión a lo largo del tiempo dado que un individuo asume la intervención en algún grado (pero no necesariamente beneficiarse de su máximo potencial debido, por ejemplo, a un uso irregular o inadecuado).
 %	}
 
-	\subsection{A homogeneous model with wash intervention}
+	\subsection{A homogeneous model with WASH intervention}
 	%We now present a model based on the previous model \ref{model1} where we assume that a fraction $p$ of the host population has access to hygiene measures. 
 	We now present a model based on the previous model \ref{model1} where we assume that the host population  can be divided into two subpopulations: with intervention and no intervention, denoted $N_{in}$  and $N_{nin}$ , respectively.
 	Therefore we assume that there are $pN$  host  with intervention and  $(1-p)N$ host with no intervetion, where $p$ is

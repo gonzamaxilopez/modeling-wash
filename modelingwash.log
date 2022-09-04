@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.1.31)  2 SEP 2022 03:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.1.31)  4 SEP 2022 03:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,24 +384,19 @@ Overfull \hbox (1.26047pt too wide) in paragraph at lines 67--67
 
 
 [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 215.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 216.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
- [4]
-Overfull \hbox (10.60918pt too wide) in paragraph at lines 288--292
-\OT1/cmr/m/n/12 Tambi^^Sen asum-i-mos que el ac-ceso al``agua'' en \OT1/cmr/m/i
-t/12 WASH \OT1/cmr/m/n/12 esta in-clu-ida en cualquiera
- []
-
-[5] [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
+ [4] [5]
+[6]
 <model1wash.png, id=158, 824.6007pt x 576.11235pt>
 File: model1wash.png Graphic file (type png)
 <use model1wash.png>
-Package pdftex.def Info: model1wash.png  used on input line 684.
+Package pdftex.def Info: model1wash.png  used on input line 680.
 (pdftex.def)             Requested size: 386.10214pt x 269.75311pt.
 
 
@@ -409,14 +404,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: Reference `fig:model1conjunto' on page 7 undefined on input line
- 693.
+ 689.
 
 
 LaTeX Warning: Reference `fig:model1conjunto' on page 7 undefined on input line
- 697.
+ 693.
 
 [7] [8 <./model1wash.png>]
-Overfull \hbox (10.24446pt too wide) in paragraph at lines 747--749
+Overfull \hbox (10.24446pt too wide) in paragraph at lines 743--745
 \OT1/cmr/m/n/12 En este tra-bajo, pre-sen-ta-mos mod-e-los matem^^Saticos de-te
 r-min-istas y es-toc^^Sasticos
  []
@@ -426,22 +421,22 @@ r-min-istas y es-toc^^Sasticos
 \openout5 = `modelingwash.brf'.
 
  [10] [11] [12]) [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 851.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
  [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 851.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
 
 (./modelingwash.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 851.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 851.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
 Package rerunfilecheck Info: File `modelingwash.out' has not changed.
-(rerunfilecheck)             Checksum: 2360C55843064532A6D644FCA32C8181;781.
+(rerunfilecheck)             Checksum: 36E1E092406203BFEB5477B0CAE2AE8F;781.
 Package rerunfilecheck Info: File `modelingwash.brf' has not changed.
 (rerunfilecheck)             Checksum: 28AF5A51984116D89296928A1EC12EF6;1622.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 851.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
  ) 
 Here is how much of TeX's memory you used:
  7343 strings out of 492615
@@ -467,7 +462,7 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on modelingwash.pdf (14 pages, 391013 bytes).
+Output written on modelingwash.pdf (14 pages, 390660 bytes).
 PDF statistics:
  320 PDF objects out of 1000 (max. 8388607)
  282 compressed objects within 3 object streams
